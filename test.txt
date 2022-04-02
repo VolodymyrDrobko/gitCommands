@@ -1,4 +1,4 @@
-Hello git wrong
+Hello git
 $ git init - ініціалізація локального репозиторію
 $ git add - добавити файли в коміт кандидат
 $ git commit - закомітати
