@@ -7,4 +7,6 @@ $ git log --pretty=format:'%h %ad | %s%d | %an' --date=short - history in nice f
 $ git checkout (commit hash) - to navigate to any commit by hash
 $ git checkout (branch(master)) - to navigate back to master branch from any commit
 $ git reset HEAD (file name) - зробити unstage (cancel add) потім git checkout (file name) поверне стан файлу до останнього закоміченого
+$ git revert HEAD --no-edit - відмінити останній коміт
+
 
