@@ -1,4 +1,4 @@
-Hello git 1234
+Hello git
 $ git init - ініціалізація локального репозиторію
 $ git add - добавити файли в коміт кандидат
 $ git commit - закомітати
@@ -6,4 +6,5 @@ $ git status - статус локального репозиторію
 $ git log --pretty=format:'%h %ad | %s%d | %an' --date=short - history in nice format
 $ git checkout (commit hash) - to navigate to any commit by hash
 $ git checkout (branch(master)) - to navigate back to master branch from any commit
+$ git reset HEAD (file name) - зробити unstage (cancel add) потім git checkout (file name) поверне стан файлу до останнього закоміченого
 
