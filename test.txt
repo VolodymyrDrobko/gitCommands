@@ -1,4 +1,4 @@
-Hello git
+Hello git Branch test
 $ git init - ініціалізація локального репозиторію
 $ git add - добавити файли в коміт кандидат
 $ git commit - закомітати
@@ -11,5 +11,7 @@ $ git revert HEAD --no-edit - відмінити останній коміт
 $ git revert <commit hash> --no-edit - відмінити всі коміти до даного
 Шоб пофіксити конфлікт при реверті чи мерджі відкриваємо конфліктні файли редагуємо їх як нам потрібно робимо ед і
  git revert\merge --continue і commit
+$ git branch - подивитись бренчі і на якій ми зараз
+$ git checkout -b new_branch - створити нову гілку і перейти на неї
 
 
