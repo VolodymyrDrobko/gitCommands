@@ -1,4 +1,4 @@
-Hello git - new_feature change
+Hello git
 $ git init - ініціалізація локального репозиторію
 $ git add - добавити файли в коміт кандидат
 $ git commit - закомітати
@@ -13,5 +13,15 @@ $ git revert <commit hash> --no-edit - відмінити всі коміти д
  git revert\merge --continue і commit
 $ git branch - подивитись бренчі і на якій ми зараз
 $ git checkout -b new_branch - створити нову гілку і перейти на неї
+----------
+Merge steps
+-----------
+$ git checkout <branch name to which you want to merge changes>
+$ git merge <branch name from which you want to merge changes>
+IF : Conflict appear 
+THEN : Open file with conflicts and make needed updates
+AND : add and commit changes without message
+
+To close VIM - Press SHIFT + : then wq = :wq - write & close (save & close)
 
 
