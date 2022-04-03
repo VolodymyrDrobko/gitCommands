@@ -12,6 +12,18 @@ $ git revert HEAD --no-edit - відмінити останній коміт - �
 $ git revert <commit hash> --no-edit - відмінити всі коміти до даного
 Шоб пофіксити конфлікт при реверті чи мерджі відкриваємо конфліктні файли редагуємо їх як нам потрібно робимо ед і
  git revert\merge --continue і commit
+$ git branch - подивитись бренчі і на якій ми зараз
+$ git checkout -b new_branch - створити нову гілку і перейти на неї
+----------
+Merge steps
+-----------
+$ git checkout <branch name to which you want to merge changes>
+$ git merge <branch name from which you want to merge changes>
+IF : Conflict appear 
+THEN : Open file with conflicts and make needed updates
+AND : add and commit changes without message
+
+To close VIM - Press SHIFT + : then wq = :wq - write & close (save & close)
 
 
 Crazy things
