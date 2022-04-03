@@ -10,8 +10,6 @@ $ git reset HEAD (file name) - зробити unstage (cancel add) потім gi
 Если мы выполним команду git reset --hard a1e8fb5, история коммитов будет сброшена до указанного коммита. для локальних змін
 $ git revert HEAD --no-edit - відмінити останній коміт - для публічних змін
 $ git revert <commit hash> --no-edit - відмінити всі коміти до даного
-Шоб пофіксити конфлікт при реверті чи мерджі відкриваємо конфліктні файли редагуємо їх як нам потрібно робимо ед і
- git revert\merge --continue і commit
 $ git branch - подивитись бренчі і на якій ми зараз
 $ git checkout -b new_branch - створити нову гілку і перейти на неї
 ----------
@@ -24,7 +22,3 @@ THEN : Open file with conflicts and make needed updates
 AND : add and commit changes without message
 
 To close VIM - Press SHIFT + : then wq = :wq - write & close (save & close)
-
-
-Crazy things
-More Crazy things
