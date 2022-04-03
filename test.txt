@@ -8,5 +8,8 @@ $ git checkout (commit hash) - to navigate to any commit by hash
 $ git checkout (branch(master)) - to navigate back to master branch from any commit
 $ git reset HEAD (file name) - зробити unstage (cancel add) потім git checkout (file name) поверне стан файлу до останнього закоміченого
 $ git revert HEAD --no-edit - відмінити останній коміт
+$ git revert <commit hash> --no-edit - відмінити всі коміти до даного
+Шоб пофіксити конфлікт при реверті чи мерджі відкриваємо конфліктні файли редагуємо їх як нам потрібно робимо ед і
+ git revert\merge --continue і commit
 
 
