@@ -6,8 +6,11 @@ $ git status - статус локального репозиторію
 $ git log --pretty=format:'%h %ad | %s%d | %an' --date=short - history in nice format
 $ git checkout (commit hash) - to navigate to any commit by hash
 $ git checkout (branch(master)) - to navigate back to master branch from any commit
-$ git reset HEAD (file name) - зробити unstage (cancel add) потім git checkout (file name) поверне стан файлу до останнього закоміченого
+$ git reset HEAD^ - зробити unstage (cancel add) - відміна коміту але файл буде з останніми змінами
+$ git reset HEAD^ --hard - відміна коміту а також стре всі останні модифікації зроблені до останнього коміту
+наприклад є коміти 1 потім 2 все шо було зроблено після 1 буде втрачено
 Если мы выполним команду git reset --hard a1e8fb5, история коммитов будет сброшена до указанного коммита. для локальних змін
+при 
 $ git revert HEAD --no-edit - відмінити останній коміт - для публічних змін
 $ git revert <commit hash> --no-edit - відмінити всі коміти до даного
 $ git branch - подивитись бренчі і на якій ми зараз
