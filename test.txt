@@ -24,4 +24,6 @@ IF : Conflict appear
 THEN : Open file with conflicts and make needed updates
 AND : add and commit changes without message
 
+git merge - для глобальних git rebase - для локальних гілок
+
 To close VIM - Press SHIFT + : then wq = :wq - write & close (save & close)
