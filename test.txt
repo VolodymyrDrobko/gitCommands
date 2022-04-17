@@ -59,4 +59,5 @@ $ git clone https://github.com/username/repositoryName.git
 -----------------------
 Remote repository steps
 -----------------------
-$ git push origin <branch_name> - запушати зміни на глобал
+$ git push origin <branch_name> - запушати зміни на глобал якшо немає на глобалі такої бренчі (origin ідентифікатор глобального репозиторію)
+$ git push - якшо вже є на глобалі
