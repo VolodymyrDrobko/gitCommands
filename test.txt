@@ -1,25 +1,44 @@
  Hello git
+------------
+Commit steps
+------------
 $ git init - ініціалізація локального репозиторію
-$ git add - добавити файли в коміт кандидат
+$ git add <file_name> | .(all in current directory 
+if command did not perform in src so files from only current directory will be added) - добавити файли в коміт кандидат
 $ git commit - закомітати
+
+------------
+Logs steps
+------------
 $ git status - статус локального репозиторію
 $ git log --pretty=format:'%h %ad | %s%d | %an' --date=short - history in nice format
-$ git checkout (commit hash) - to navigate to any commit by hash
-$ git checkout (branch(master)) - to navigate back to master branch from any commit
-$ git reset HEAD^ - зробити unstage (cancel add) - відміна коміту але файл буде з останніми змінами
-$ git reset HEAD^ --hard - відміна коміту а також стре всі останні модифікації зроблені до останнього коміту
-наприклад є коміти 1 потім 2 все шо було зроблено після 1 буде втрачено
-Если мы выполним команду git reset --hard a1e8fb5, история коммитов будет сброшена до указанного коммита. для локальних змін
-при 
-$ git revert HEAD --no-edit - відмінити останній коміт - для публічних змін
-$ git revert <commit hash> --no-edit - відмінити всі коміти до даного
+
+------------
+Branch steps
+------------
 $ git branch - подивитись бренчі і на якій ми зараз
 $ git checkout -b new_branch - створити нову гілку і перейти на неї
-----------
+$ git checkout (commit hash) - to navigate to any commit by hash
+$ git checkout (branch - <master>) - to navigate back to master branch from any commit
+$ git reset HEAD^ - зробити unstage (cancel add) - відміна коміту але файл буде з останніми змінами
+
+--------------------
+Reset & Revert steps
+--------------------
+suitable for local changes
+$ git reset --hard HEAD^ - відміна коміту а також стре всі останні модифікації зроблені до останнього коміту
+Наприклад - є коміти 1 потім 2 все шо було зроблено після 1 буде втрачено
+$ git reset --hard a1e8fb5 - історія комітів буде скинута до вказаного коміту
+suitable for public changes
+$ git revert HEAD --no-edit - відмінити останній коміт - для публічних змін - ця відміна відображається в логах
+$ git revert <commit hash> --no-edit - відмінити всі коміти до даного
+
+-----------
 Merge steps
 -----------
 $ git checkout <branch name to which you want to merge changes>
 $ git merge <branch name from which you want to merge changes>
+
 IF : Conflict appear 
 THEN : Open file with conflicts and make needed updates
 AND : add and commit changes without message
@@ -27,3 +46,14 @@ AND : add and commit changes without message
 git merge - для глобальних git rebase - для локальних гілок
 
 To close VIM - Press SHIFT + : then wq = :wq - write & close (save & close)
+
+-----------------------
+Remote repository steps
+-----------------------
+
+шоб додати віддалений репозиторій до вже існуючого локального проекту
+$ git remote add origin https://github.com/username/repositoryName.git
+$ git push -u orgin master - заливаємо всі зміни на ремоут
+
+шоб зклонувати репозиторій в пусту папку (почати з 0)
+$ git clone https://github.com/username/repositoryName.git
