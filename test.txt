@@ -24,4 +24,12 @@ AND : add and commit changes without message
 
 To close VIM - Press SHIFT + : then wq = :wq - write & close (save & close)
 
+шоб додати віддалений репозиторій до вже існуючого локального проекту
+$ git remote add origin https://github.com/username/repositoryName.git
+$ git push -u orgin master - заливаємо всі зміни на ремоут
+
+шоб зклонувати репозиторій в пусту папку (почати з 0)
+$ git clone https://github.com/username/repositoryName.git
+ 
+
 
