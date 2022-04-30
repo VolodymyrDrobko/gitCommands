@@ -18,7 +18,8 @@ $ git log --pretty=format:'%h %ad | %s%d | %an' --date=short - history in nice f
 Branch steps
 ------------
 $ git branch - подивитись бренчі і на якій ми зараз
-$ git checkout -b new_branch - створити нову гілку і перейти на неї
+$ git checkout -b <branch name> - створити нову гілку і перейти на неї
+$ git branch -d <branch name> - видалити гілку
 $ git checkout (commit hash) - to navigate to any commit by hash
 $ git checkout (branch - <master>) - to navigate back to master branch from any commit
 $ git reset HEAD^ - зробити unstage (cancel add) - відміна коміту але файл буде з останніми змінами
@@ -67,6 +68,7 @@ Update Remote repository steps
 ------------------------------
 $ git pull - апдейтить проект по принципу мердж тобто вибудовує коміти по часу апдейтів
 $ git pull --rebase origin <branch_name> - апдейтить проект по принципу додавання змін з глобалу перед останніми змінами з локального
+рекомендовано для використання саме ребейз версію
 - new local commits
 - new remote commits
 - old local commits
