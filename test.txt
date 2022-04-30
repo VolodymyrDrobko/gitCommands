@@ -61,3 +61,12 @@ Remote repository steps
 -----------------------
 $ git push origin <branch_name> - запушати зміни на глобал якшо немає на глобалі такої бренчі (origin ідентифікатор глобального репозиторію)
 $ git push - якшо вже є на глобалі
+
+------------------------------
+Update Remote repository steps
+------------------------------
+$ git pull - апдейтить проект по принципу мердж тобто вибудовує коміти по часу апдейтів
+$ git pull --rebase origin <branch_name> - апдейтить проект по принципу додавання змін з глобалу перед останніми змінами з локального
+- new local commits
+- new remote commits
+- old local commits
