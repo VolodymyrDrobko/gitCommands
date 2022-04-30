@@ -77,9 +77,10 @@ $ git pull --rebase origin <branch_name> - апдейтить проект по 
 Git stash
 ------------------------------
 $ git stash - створити локально корзинку і зберегти туди свої зміни
-$ git stash list
-$ git stash show
-$ git stash apply
-$ git stash pop
-$ git stash drop
-$ git stash clear
+$ git stash list - показати список стешів
+$ git stash show - показати останній стеш
+$ git stash apply - добавити останній стеш в код (при цьому стеш залишиться в корзині)
+$ git stash pop - добавити останній стеш в корзину (він видалиться з корзини)
+$ git stash drop - видалити останній стеш з корзини
+$ git stash clear - вичистити стеш повністю
+$ git stash save 'message' - зберегти стеш з повідомленням
